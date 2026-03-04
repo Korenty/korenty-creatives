@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Korenty — Start a conversation with Fanuel Debebe and the Korenty team about your next strategic or infrastructure engagement." />
+  <title>Contact — Korenty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: { preflight: false },
+      theme: { extend: { colors: { accent: '#2E6BFF' } } }
+    };
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Korenty Home">K<span>.</span>ORENTY</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero" aria-labelledby="contact-hero-heading">
+      <div class="container">
+        <div class="page-hero-content text-center">
+          <span class="eyebrow reveal">Let's Connect</span>
+          <h1 id="contact-hero-heading" class="reveal delay-100" style="margin-bottom:1.25rem;">Begin Your Engagement</h1>
+          <p class="reveal delay-200" style="font-size:1.15rem;max-width:520px;margin:0 auto;">
+            Every elite engagement begins with a single conversation. Tell us who you are and what you're building — Korenty crafts tailor-made solutions for those who demand the extraordinary.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT SPLIT LAYOUT -->
+    <section class="section" aria-labelledby="contact-section-heading">
+      <div class="container">
+        <h2 id="contact-section-heading" class="sr-only">Contact form and information</h2>
+
+        <div style="display:grid;grid-template-columns:2fr 3fr;gap:5rem;align-items:start;" class="contact-split">
+
+          <!-- LEFT: Contact Info -->
+          <div class="reveal-left">
+            <span class="eyebrow">Contact Details</span>
+            <h3 style="margin-bottom:2rem;font-size:1.5rem;">We'd Love to<br/>Hear From You</h3>
+            <p style="margin-bottom:2.5rem;font-size:0.9rem;">Whether you're a startup ready to establish authority, an influencer building your brand empire, a public figure demanding elite digital presence, or an extraordinary personality ready to dominate your space — start here.</p>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">✉</div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">hello@korenty.com</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="contact-info-label">Location</div>
+                <div class="contact-info-value">Addis Ababa, Ethiopia<br/>
+                  <span style="font-size:0.8rem;color:var(--steel);">Available for global engagements</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">⏱</div>
+              <div>
+                <div class="contact-info-label">Response Time</div>
+                <div class="contact-info-value">Within 24 hours</div>
+              </div>
+            </div>
+
+            <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border-card);">
+              <div class="contact-info-label" style="margin-bottom:1rem;">Connect</div>
+              <div style="display:flex;gap:0.875rem;flex-wrap:wrap;">
+                <a href="#" aria-label="LinkedIn" style="width:40px;height:40px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-card);display:flex;align-items:center;justify-content:center;font-size:1rem;transition:var(--transition);" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">in</a>
+                <a href="#" aria-label="Twitter / X" style="width:40px;height:40px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-card);display:flex;align-items:center;justify-content:center;font-size:0.9rem;font-weight:700;transition:var(--transition);" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">𝕏</a>
+                <a href="#" aria-label="Instagram" style="width:40px;height:40px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-card);display:flex;align-items:center;justify-content:center;font-size:1rem;transition:var(--transition);" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">◎</a>
+                <a href="#" aria-label="GitHub" style="width:40px;height:40px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-card);display:flex;align-items:center;justify-content:center;font-size:1rem;transition:var(--transition);" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">⌥</a>
+              </div>
+            </div>
+
+            <div style="margin-top:2.5rem;padding:1.5rem;background:rgba(46,107,255,0.06);border:1px solid rgba(46,107,255,0.15);border-radius:var(--radius);">
+              <p style="font-size:0.85rem;font-style:italic;color:var(--text-secondary);margin:0;line-height:1.7;">
+                "The most important systems are built on the clearest conversations."
+              </p>
+              <p style="font-size:0.78rem;color:var(--accent);font-weight:600;margin-top:0.75rem;">— Fanuel Debebe, Founder</p>
+            </div>
+          </div>
+
+          <!-- RIGHT: Contact Form -->
+          <div class="reveal-right">
+            <div style="background:var(--bg-card);border:1px solid var(--border-card);border-radius:var(--radius-lg);padding:2.5rem;">
+              <h3 style="margin-bottom:0.5rem;font-size:1.3rem;">Send a Message</h3>
+              <p style="font-size:0.875rem;margin-bottom:2rem;">Fill in the details below and we'll be in touch within 24 hours.</p>
+
+              <form id="contact-form" novalidate aria-label="Contact form">
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;" class="form-row">
+                  <div class="form-field">
+                    <label class="form-label" for="full-name">Full Name <span aria-label="required" style="color:var(--accent);">*</span></label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="full-name"
+                      name="full-name"
+                      placeholder="Your full name"
+                      required
+                      autocomplete="name"
+                      aria-required="true"
+                    />
+                    <div class="form-error" role="alert" aria-live="polite" id="full-name-error"></div>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="email">Email Address <span aria-label="required" style="color:var(--accent);">*</span></label>
+                    <input
+                      class="form-input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="you@company.com"
+                      required
+                      autocomplete="email"
+                      aria-required="true"
+                    />
+                    <div class="form-error" role="alert" aria-live="polite" id="email-error"></div>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="company">Company <span style="color:var(--steel);font-weight:400;letter-spacing:0;text-transform:none;">(optional)</span></label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Your company or organisation"
+                    autocomplete="organization"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="service-interest">Service Interest <span aria-label="required" style="color:var(--accent);">*</span></label>
+                  <select
+                    class="form-input"
+                    id="service-interest"
+                    name="service-interest"
+                    required
+                    aria-required="true"
+                  >
+                    <option value="" disabled selected>Select a service area…</option>
+                    <option value="strategy">Strategy Consulting</option>
+                    <option value="identity">Brand Identity Design</option>
+                    <option value="cloud">Cloud Architecture</option>
+                    <option value="systems">Systems Integration</option>
+                    <option value="digital-platform">Digital Platform Architecture</option>
+                    <option value="digital-transformation">Digital Transformation</option>
+                    <option value="multiple">Multiple Services</option>
+                    <option value="other">Other / Not Sure Yet</option>
+                  </select>
+                  <div class="form-error" role="alert" aria-live="polite" id="service-interest-error"></div>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="message">Message <span aria-label="required" style="color:var(--accent);">*</span></label>
+                  <textarea
+                    class="form-input"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us about your project, goals, and timeline…"
+                    required
+                    aria-required="true"
+                    style="resize:vertical;min-height:130px;"
+                  ></textarea>
+                  <div class="form-error" role="alert" aria-live="polite" id="message-error"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;font-size:0.95rem;" aria-label="Send message">
+                  Send Message
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+
+              </form>
+
+              <!-- Success State -->
+              <div id="form-success" style="display:none;text-align:center;padding:3rem 1rem;">
+                <div style="width:64px;height:64px;border-radius:50%;background:rgba(34,197,94,0.1);border:2px solid rgba(34,197,94,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;">✓</div>
+                <h3 style="margin-bottom:0.75rem;color:var(--text-primary);">Message Sent</h3>
+                <p style="font-size:0.9rem;">Thank you for reaching out. Fanuel or a member of the Korenty team will respond within 24 hours.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROCESS PROMISE -->
+    <section class="section-sm" style="background:linear-gradient(135deg,#0B1F2E,#0d1521);" aria-labelledby="process-promise-heading">
+      <div class="container">
+        <div class="text-center mb-12 reveal">
+          <span class="eyebrow">What Happens Next</span>
+          <h2 id="process-promise-heading" style="font-size:1.8rem;">Our Promise to You</h2>
+        </div>
+
+        <div class="process-steps reveal">
+          <div class="process-step">
+            <div class="process-number" style="animation: pulse 2s ease-in-out infinite;">1</div>
+            <div class="process-label">Submit</div>
+            <div class="process-desc">Send your message through the form or email us directly at hello@korenty.com.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-number">2</div>
+            <div class="process-label">Review (24hrs)</div>
+            <div class="process-desc">Fanuel personally reviews every enquiry within 24 hours — no automated responses, no sales team.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-number">3</div>
+            <div class="process-label">Connect</div>
+            <div class="process-desc">We schedule a discovery call to explore your project scope, goals, and how Korenty can best serve your vision with tailor-made, elite solutions.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- MAP PLACEHOLDER -->
+    <section class="section-sm" aria-labelledby="location-heading">
+      <div class="container">
+        <div class="reveal" style="max-width:760px;margin:0 auto;">
+          <div class="text-center" style="margin-bottom:2rem;">
+            <span class="eyebrow">Our Base</span>
+            <h2 id="location-heading" style="font-size:1.8rem;">Addis Ababa, Ethiopia</h2>
+            <p style="margin-top:0.5rem;">Headquartered in East Africa's most dynamic city — available for engagements worldwide.</p>
+          </div>
+
+          <div class="map-placeholder" role="img" aria-label="Map showing Addis Ababa, Ethiopia location">
+            <div class="map-pin" aria-hidden="true"></div>
+            <div style="position:relative;z-index:1;text-align:center;">
+              <div style="font-size:0.95rem;font-weight:700;color:var(--text-primary);margin-top:1rem;">Addis Ababa</div>
+              <div style="font-size:0.8rem;color:var(--steel);">Federal Democratic Republic of Ethiopia</div>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;margin-top:2rem;" class="location-grid">
+            <div style="text-align:center;padding:1.25rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:var(--radius);">
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;" aria-hidden="true">🌍</div>
+              <div style="font-size:0.8rem;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem;">East Africa HQ</div>
+              <div style="font-size:0.75rem;color:var(--steel);">Addis Ababa, ET</div>
+            </div>
+            <div style="text-align:center;padding:1.25rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:var(--radius);">
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;" aria-hidden="true">✈️</div>
+              <div style="font-size:0.8rem;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem;">Global Reach</div>
+              <div style="font-size:0.75rem;color:var(--steel);">Worldwide engagements</div>
+            </div>
+            <div style="text-align:center;padding:1.25rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:var(--radius);">
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;" aria-hidden="true">🕐</div>
+              <div style="font-size:0.8rem;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem;">EAT (UTC+3)</div>
+              <div style="font-size:0.75rem;color:var(--steel);">East Africa Time</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">K<span>.</span>ORENTY</div>
+          <p class="footer-tagline">Hybrid Strategic + Digital Systems Authority. Precision. Intelligence. Scale.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Services</div>
+          <ul class="footer-links">
+            <li><a href="services.html">Strategy Consulting</a></li>
+            <li><a href="services.html">Brand Identity</a></li>
+            <li><a href="services.html">Cloud Architecture</a></li>
+            <li><a href="services.html">Systems Integration</a></li>
+            <li><a href="services.html">Digital Platform Architecture</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Korenty. All rights reserved.</span>
+        <span style="color:var(--steel);">Addis Ababa, Ethiopia</span>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    @media (max-width: 768px) {
+      .contact-split { grid-template-columns: 1fr !important; gap: 3rem !important; }
+      .form-row { grid-template-columns: 1fr !important; }
+      .location-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
