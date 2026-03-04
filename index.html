@@ -13,7 +13,7 @@
   <script>
     tailwind.config = {
       corePlugins: { preflight: false },
-      theme: { extend: { colors: { accent: '#2E6BFF' } } }
+      theme: { extend: { colors: { accent: '#FFB400', accent2: '#7C5DFA' } } }
     };
   </script>
 </head>
@@ -26,6 +26,7 @@
     <div class="container">
       <div class="nav-inner">
         <a href="index.html" class="nav-logo" aria-label="Korenty Home">
+          <span class="nav-logo-mark" aria-hidden="true"><span></span><span></span><span></span></span>
           K<span>.</span>ORENTY
         </a>
         <ul class="nav-links" role="list">
@@ -57,9 +58,20 @@
     ══════════════════════════════════ -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-bg"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-k" aria-hidden="true">K</div>
+      <div class="hero-rects" aria-hidden="true">
+        <div class="hero-rect hero-rect-1"></div>
+        <div class="hero-rect hero-rect-2"></div>
+        <div class="hero-rect hero-rect-3"></div>
+        <div class="hero-rect hero-rect-4"></div>
+        <div class="hero-rect hero-rect-5"></div>
+        <div class="hero-rect hero-rect-6"></div>
+        <div class="hero-rect hero-rect-7"></div>
+        <div class="hero-rect hero-rect-8"></div>
+        <div class="hero-rect hero-rect-9"></div>
+        <div class="hero-rect hero-rect-10"></div>
+        <div class="hero-rect hero-rect-11"></div>
+        <div class="hero-rect hero-rect-12"></div>
+      </div>
 
       <div class="container" style="position:relative;z-index:2;">
         <div class="hero-content">
@@ -81,7 +93,7 @@
           </div>
           <div class="hero-animate-5" style="margin-top:4rem;display:flex;align-items:center;gap:1.5rem;">
             <div style="display:flex;gap:-8px;">
-              <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#2E6BFF,#4d84ff);border:2px solid var(--bg-primary);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:800;">FD</div>
+              <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#FFB400,#ffc933);border:2px solid var(--bg-primary);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:800;">FD</div>
             </div>
             <p style="font-size:0.85rem;color:var(--steel);margin:0;">
               Founded by <strong style="color:var(--text-primary);">Fanuel Debebe</strong> — Apparel Engineer · Cloud Engineer · Systems Architect · Entrepreneur (GurshaHub)

@@ -423,6 +423,33 @@
   }
 
   /* ─────────────────────────────────────────
+     16. Hero Rectangle Mouse Parallax
+  ───────────────────────────────────────── */
+  function initRectAnimations() {
+    const rects = document.querySelectorAll('.hero-rect');
+    if (!rects.length) return;
+
+    // Parallax depths for each of the 12 .hero-rect elements (index-matched).
+    // Extra rects beyond array length fall back to 0.03; fewer rects leave
+    // extra values unused — both cases are harmless.
+    const depths = [0.04, 0.06, 0.02, 0.05, 0.03, 0.06, 0.02, 0.04, 0.06, 0.03, 0.015, 0.025];
+
+    function onMouseMove(e) {
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      const dx = e.clientX - cx;
+      const dy = e.clientY - cy;
+
+      rects.forEach((rect, i) => {
+        const d = depths[i] || 0.03;
+        rect.style.transform = `translate(${dx * d}px, ${dy * d}px)`;
+      });
+    }
+
+    window.addEventListener('mousemove', onMouseMove, { passive: true });
+  }
+
+  /* ─────────────────────────────────────────
      Init All
   ───────────────────────────────────────── */
   function init() {
@@ -441,6 +468,7 @@
     initContactForm();
     initActiveNav();
     initStaggerChildren();
+    initRectAnimations();
   }
 
   if (document.readyState === 'loading') {
