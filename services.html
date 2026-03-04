@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Korenty Services — Strategy Consulting, Brand Identity, Cloud Architecture, Systems Integration, Fashion Technology, Digital Transformation." />
+  <title>Services — Korenty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: { preflight: false },
+      theme: { extend: { colors: { accent: '#2E6BFF' } } }
+    };
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Korenty Home">K<span>.</span>ORENTY</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero" aria-labelledby="services-hero-heading">
+      <div class="container">
+        <div class="page-hero-content text-center">
+          <span class="eyebrow reveal">Capabilities</span>
+          <h1 id="services-hero-heading" class="reveal delay-100" style="margin-bottom:1.25rem;">Our Services</h1>
+          <p class="reveal delay-200" style="font-size:1.15rem;max-width:560px;margin:0 auto;">
+            Comprehensive strategic and technical solutions — each discipline precision-engineered, every engagement built to deliver measurable outcomes.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- SERVICES GRID -->
+    <section class="section" aria-labelledby="services-grid-heading">
+      <div class="container">
+        <div class="text-center mb-16 reveal">
+          <span class="eyebrow">Full Capability Suite</span>
+          <h2 id="services-grid-heading">Six Disciplines.<br/>One Integrated Authority.</h2>
+        </div>
+
+        <div class="grid-3" data-stagger="100">
+
+          <article class="card reveal delay-100" aria-label="Strategy Consulting">
+            <div class="icon-box" aria-hidden="true">⚡</div>
+            <h3 style="margin-bottom:0.75rem;">Strategy Consulting</h3>
+            <p style="font-size:0.9rem;margin-bottom:1.25rem;">Analytical frameworks that decode market complexity and map competitive landscapes. We translate deep intelligence into decisive action plans that align your entire organisation around measurable growth objectives.</p>
+            <a href="contact.html" class="btn btn-ghost">
+              Enquire
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card reveal delay-200" aria-label="Brand Identity Design">
+            <div class="icon-box" aria-hidden="true">◈</div>
+            <h3 style="margin-bottom:0.75rem;">Brand Identity Design</h3>
+            <p style="font-size:0.9rem;margin-bottom:1.25rem;">Coherent brand architectures built at the intersection of fashion technology and visual systems. From visual language to motion design to digital tokens — identities that communicate authority at every touchpoint.</p>
+            <a href="contact.html" class="btn btn-ghost">
+              Enquire
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card reveal delay-300" aria-label="Cloud Architecture">
+            <div class="icon-box" aria-hidden="true">☁️</div>
+            <h3 style="margin-bottom:0.75rem;">Cloud Architecture</h3>
+            <p style="font-size:0.9rem;margin-bottom:1.25rem;">Multi-region cloud infrastructure design — containerised deployments, serverless systems, and infrastructure-as-code frameworks built for resilience, performance, and operational efficiency at scale.</p>
+            <a href="contact.html" class="btn btn-ghost">
+              Enquire
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card reveal delay-100" aria-label="Systems Integration">
+            <div class="icon-box" aria-hidden="true">⬡</div>
+            <h3 style="margin-bottom:0.75rem;">Systems Integration</h3>
+            <p style="font-size:0.9rem;margin-bottom:1.25rem;">End-to-end systems architecture that connects every operational layer — API ecosystems, data pipelines, third-party platforms — into a unified, observable, and scalable technical infrastructure.</p>
+            <a href="contact.html" class="btn btn-ghost">
+              Enquire
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card reveal delay-200" aria-label="Fashion Technology">
+            <div class="icon-box" aria-hidden="true">✦</div>
+            <h3 style="margin-bottom:0.75rem;">Fashion Technology</h3>
+            <p style="font-size:0.9rem;margin-bottom:1.25rem;">Digital fashion workflows — 3D prototyping, virtual sampling, data-informed collection development, and digital supply chain integration that compress timelines and eliminate material waste.</p>
+            <a href="contact.html" class="btn btn-ghost">
+              Enquire
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card reveal delay-300" aria-label="Digital Transformation">
+            <div class="icon-box" aria-hidden="true">🔄</div>
+            <h3 style="margin-bottom:0.75rem;">Digital Transformation</h3>
+            <p style="font-size:0.9rem;margin-bottom:1.25rem;">Full-stack organisational transformation — from legacy modernisation and workflow automation to building the digital capabilities your team needs to operate independently at enterprise pace.</p>
+            <a href="contact.html" class="btn btn-ghost">
+              Enquire
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROCESS FLOW -->
+    <section class="section" style="background:linear-gradient(180deg,var(--bg-primary) 0%,#0d1117 100%);" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="text-center mb-16 reveal">
+          <span class="eyebrow">Methodology</span>
+          <h2 id="process-heading">How We Work</h2>
+          <p style="max-width:520px;margin:0.75rem auto 0;">A structured methodology that ensures every engagement is grounded, purposeful, and built to deliver lasting outcomes.</p>
+        </div>
+
+        <div class="process-steps reveal">
+          <div class="process-step">
+            <div class="process-number">1</div>
+            <div class="process-label">Discovery &amp; Analysis</div>
+            <div class="process-desc">Deep-dive audit of your current state — systems, brand, market, and competitive context.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-number">2</div>
+            <div class="process-label">Strategic Framework</div>
+            <div class="process-desc">Define clear objectives, success metrics, and a prioritised roadmap aligned to your goals.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-number">3</div>
+            <div class="process-label">Design &amp; Architecture</div>
+            <div class="process-desc">Develop the solution blueprints — identity systems, technical architectures, integration maps.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-number">4</div>
+            <div class="process-label">Implementation</div>
+            <div class="process-desc">Precision build and deployment — with continuous quality checks and stakeholder alignment throughout.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-number">5</div>
+            <div class="process-label">Scale &amp; Optimise</div>
+            <div class="process-desc">Post-launch performance analysis, iterative refinement, and infrastructure scaling as you grow.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SERVICE DEEP-DIVES -->
+    <section class="section" aria-labelledby="deepdive-heading">
+      <div class="container">
+        <div class="text-center mb-16 reveal">
+          <span class="eyebrow">Core Services</span>
+          <h2 id="deepdive-heading">Where We Go Deep</h2>
+        </div>
+
+        <!-- Deep Dive 1: Strategy -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-bottom:6rem;" class="deepdive-split">
+          <div class="reveal-left">
+            <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,#0B1F2E,#1a2d3d);border:1px solid rgba(46,107,255,0.2);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:6rem;" role="img" aria-label="Strategy icon">⚡</div>
+          </div>
+          <div class="reveal-right">
+            <span class="eyebrow">01 / Strategy</span>
+            <h3 style="margin-bottom:1rem;font-size:1.6rem;">Strategy Consulting</h3>
+            <p style="margin-bottom:1rem;">Most strategy work fails because it conflates activity with direction. Korenty's approach begins with rigorous diagnostic work — understanding not just where a business is, but why it is there and what structural forces will shape where it goes.</p>
+            <p style="margin-bottom:2rem;">We build frameworks that are executable at every level of an organisation — from C-suite positioning decisions to operational workflow design. The output is always a living document, not a static deck.</p>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+              <div style="display:flex;gap:1rem;align-items:center;padding:0.875rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:8px;">
+                <span style="color:var(--accent);font-size:1.2rem;">→</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Market Entry &amp; Competitive Positioning</span>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:center;padding:0.875rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:8px;">
+                <span style="color:var(--accent);font-size:1.2rem;">→</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Growth Architecture &amp; Scaling Roadmaps</span>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:center;padding:0.875rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:8px;">
+                <span style="color:var(--accent);font-size:1.2rem;">→</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Organisational Design &amp; Operating Models</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deep Dive 2: Identity -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-bottom:6rem;" class="deepdive-split">
+          <div class="reveal-left" style="order:2;">
+            <span class="eyebrow">02 / Identity</span>
+            <h3 style="margin-bottom:1rem;font-size:1.6rem;">Brand Identity Design</h3>
+            <p style="margin-bottom:1rem;">A brand identity is not a logo. It's a comprehensive system of meaning — how your organisation presents itself visually, verbally, and experientially, across every context in which it appears.</p>
+            <p style="margin-bottom:2rem;">Korenty's approach is informed by fashion technology's emphasis on modular, scalable systems. We build design tokens and component libraries alongside visual guidelines — ensuring your identity works at every scale and across every medium.</p>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+              <div style="display:flex;gap:1rem;align-items:center;padding:0.875rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:8px;">
+                <span style="color:var(--accent);font-size:1.2rem;">→</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Visual Identity Systems &amp; Brand Guidelines</span>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:center;padding:0.875rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:8px;">
+                <span style="color:var(--accent);font-size:1.2rem;">→</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Motion Design &amp; Digital Experience</span>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:center;padding:0.875rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:8px;">
+                <span style="color:var(--accent);font-size:1.2rem;">→</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Design Token Systems &amp; Component Libraries</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal-right" style="order:1;">
+            <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,#0B1F2E,#1a2d3d);border:1px solid rgba(46,107,255,0.2);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:6rem;" role="img" aria-label="Identity icon">◈</div>
+          </div>
+        </div>
+
+        <!-- Deep Dive 3: Systems -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;" class="deepdive-split">
+          <div class="reveal-left">
+            <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,#0B1F2E,#1a2d3d);border:1px solid rgba(46,107,255,0.2);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:6rem;" role="img" aria-label="Systems icon">⬡</div>
+          </div>
+          <div class="reveal-right">
+            <span class="eyebrow">03 / Systems</span>
+            <h3 style="margin-bottom:1rem;font-size:1.6rem;">Cloud &amp; Systems Architecture</h3>
+            <p style="margin-bottom:1rem;">Infrastructure is strategic. The architecture decisions made today will shape your organisation's capability ceiling for years. Korenty designs cloud-native systems with that long-term view — building for operational resilience, cost efficiency, and the ability to scale without re-architecture.</p>
+            <p style="margin-bottom:2rem;">Our systems work is always paired with knowledge transfer — we build your team's capability alongside the infrastructure, so you own what we create.</p>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+              <div style="display:flex;gap:1rem;align-items:center;padding:0.875rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:8px;">
+                <span style="color:var(--accent);font-size:1.2rem;">→</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Multi-Region Cloud Architecture Design</span>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:center;padding:0.875rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:8px;">
+                <span style="color:var(--accent);font-size:1.2rem;">→</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">API Design &amp; Integration Architecture</span>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:center;padding:0.875rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:8px;">
+                <span style="color:var(--accent);font-size:1.2rem;">→</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Infrastructure-as-Code &amp; DevOps Pipelines</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="cta-strip" aria-labelledby="services-cta-heading">
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="reveal">
+          <span class="eyebrow">Commission a Service</span>
+          <h2 id="services-cta-heading" style="margin-bottom:1.25rem;">Every Engagement Starts<br/>With a Discovery Call</h2>
+          <p style="max-width:480px;margin:0 auto 2.5rem;">Tell us what you're building. We'll tell you exactly how Korenty can make it better.</p>
+          <a href="contact.html" class="btn btn-primary" style="font-size:1rem;padding:1rem 2.5rem;">Schedule Discovery →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">K<span>.</span>ORENTY</div>
+          <p class="footer-tagline">Hybrid Strategic + Digital Infrastructure Authority. Precision. Intelligence. Scale.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Services</div>
+          <ul class="footer-links">
+            <li><a href="services.html">Strategy Consulting</a></li>
+            <li><a href="services.html">Brand Identity</a></li>
+            <li><a href="services.html">Cloud Architecture</a></li>
+            <li><a href="services.html">Systems Integration</a></li>
+            <li><a href="services.html">Fashion Technology</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Korenty. All rights reserved.</span>
+        <span style="color:var(--steel);">Addis Ababa, Ethiopia</span>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 768px) {
+      .deepdive-split { grid-template-columns: 1fr !important; gap: 3rem !important; }
+      .deepdive-split > div[style*="order:1"] { order: 1 !important; }
+      .deepdive-split > div[style*="order:2"] { order: 2 !important; }
+    }
+  </style>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
