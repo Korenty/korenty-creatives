@@ -216,6 +216,23 @@ p {
   opacity: 1;
 }
 
+/* ── Card Image (top of card) ── */
+.card-img-wrap {
+  margin: -2rem -2rem 1.5rem;
+  height: 150px;
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.card:hover .card-img-wrap img {
+  transform: scale(1.05);
+}
+
 /* ── Grid Layouts ── */
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
@@ -368,6 +385,12 @@ p {
   background: var(--bg-primary);
   z-index: 0;
 }
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.07;
+}
 /* Legacy hero-bg elements replaced by .hero-rects system */
 .hero-grid { display: none; }
 .hero-glow { display: none; }
@@ -517,10 +540,20 @@ p {
     linear-gradient(rgba(255, 180, 0, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 180, 0, 0.03) 1px, transparent 1px);
   background-size: 80px 80px;
+  z-index: 1;
+}
+.page-hero img.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.06;
+  z-index: 0;
 }
 .page-hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* ── Stats ── */
@@ -678,6 +711,65 @@ p {
   inset: -50%;
   background: conic-gradient(from 0deg, transparent 0deg, rgba(255,180,0,0.06) 60deg, transparent 120deg);
   animation: rotate 12s linear infinite;
+  z-index: 1;
+}
+.founder-avatar img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 0;
+}
+
+/* ── Case Card Image ── */
+.case-card-img-wrap {
+  margin: -2rem -2rem 1.5rem;
+  height: 170px;
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.case-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.case-card:hover .case-card-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* ── Deep-Dive Image Wrap ── */
+.deepdive-img-wrap {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 180, 0, 0.2);
+}
+.deepdive-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.deepdive-img-wrap:hover img {
+  transform: scale(1.03);
+}
+
+/* ── Timeline Image ── */
+.timeline-image-wrap {
+  margin-top: 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255, 180, 0, 0.15);
+}
+.timeline-image-wrap img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
 /* ── CTA Strip ── */
@@ -1042,6 +1134,21 @@ select.form-input option {
     linear-gradient(rgba(255, 180, 0, 0.04) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 180, 0, 0.04) 1px, transparent 1px);
   background-size: 30px 30px;
+  z-index: 1;
+}
+.map-placeholder img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+  z-index: 0;
+}
+.map-placeholder .map-pin,
+.map-placeholder .map-label {
+  position: relative;
+  z-index: 2;
 }
 .map-pin {
   width: 40px;
