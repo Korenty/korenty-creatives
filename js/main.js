@@ -429,7 +429,9 @@
     const rects = document.querySelectorAll('.hero-rect');
     if (!rects.length) return;
 
-    // Each rect gets a different parallax depth (0.01–0.06)
+    // Parallax depths for each of the 12 .hero-rect elements (index-matched).
+    // Extra rects beyond array length fall back to 0.03; fewer rects leave
+    // extra values unused — both cases are harmless.
     const depths = [0.04, 0.06, 0.02, 0.05, 0.03, 0.06, 0.02, 0.04, 0.06, 0.03, 0.015, 0.025];
 
     function onMouseMove(e) {
