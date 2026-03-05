@@ -7,13 +7,14 @@
   <title>Contact — Korenty</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       corePlugins: { preflight: false },
-      theme: { extend: { colors: { accent: '#FFB400', accent2: '#7C5DFA' } } }
+      theme: { extend: { colors: { accent: '#7091E6', accent2: '#3D52A0' } } }
     };
   </script>
 </head>
@@ -77,7 +78,7 @@
             <p style="margin-bottom:2.5rem;font-size:0.9rem;">Whether you're a startup ready to establish authority, an influencer building your brand empire, a public figure demanding elite digital presence, or an extraordinary personality ready to dominate your space — start here.</p>
 
             <div class="contact-info-item">
-              <div class="contact-info-icon" aria-hidden="true">✉</div>
+              <div class="contact-info-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="M22 7l-10 7L2 7"/></svg></div>
               <div>
                 <div class="contact-info-label">Email</div>
                 <div class="contact-info-value">hello@korenty.com</div>
@@ -85,7 +86,7 @@
             </div>
 
             <div class="contact-info-item">
-              <div class="contact-info-icon" aria-hidden="true">📍</div>
+              <div class="contact-info-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <div>
                 <div class="contact-info-label">Location</div>
                 <div class="contact-info-value">Addis Ababa, Ethiopia<br/>
@@ -95,7 +96,7 @@
             </div>
 
             <div class="contact-info-item">
-              <div class="contact-info-icon" aria-hidden="true">⏱</div>
+              <div class="contact-info-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
               <div>
                 <div class="contact-info-label">Response Time</div>
                 <div class="contact-info-value">Within 24 hours</div>
@@ -112,7 +113,7 @@
               </div>
             </div>
 
-            <div style="margin-top:2.5rem;padding:1.5rem;background:rgba(255,180,0,0.06);border:1px solid rgba(255,180,0,0.15);border-radius:var(--radius);">
+            <div style="margin-top:2.5rem;padding:1.5rem;background:rgba(112, 145, 230, 0.06);border:1px solid rgba(112, 145, 230, 0.15);border-radius:var(--radius);">
               <p style="font-size:0.85rem;font-style:italic;color:var(--text-secondary);margin:0;line-height:1.7;">
                 "The most important systems are built on the clearest conversations."
               </p>
@@ -211,14 +212,14 @@
 
                 <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;font-size:0.95rem;" aria-label="Send message">
                   Send Message
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
               </form>
 
               <!-- Success State -->
               <div id="form-success" style="display:none;text-align:center;padding:3rem 1rem;">
-                <div style="width:64px;height:64px;border-radius:50%;background:rgba(34,197,94,0.1);border:2px solid rgba(34,197,94,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;">✓</div>
+                <div style="width:64px;height:64px;border-radius:50%;background:rgba(34,197,94,0.1);border:2px solid rgba(34,197,94,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
                 <h3 style="margin-bottom:0.75rem;color:var(--text-primary);">Message Sent</h3>
                 <p style="font-size:0.9rem;">Thank you for reaching out. Fanuel or a member of the Korenty team will respond within 24 hours.</p>
               </div>
