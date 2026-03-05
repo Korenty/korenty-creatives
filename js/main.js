@@ -472,16 +472,23 @@
 
     updateToggleLabel();
 
-    btn.addEventListener('click', () => {
-      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-      if (isDark) {
-        document.documentElement.removeAttribute('data-theme');
-        localStorage.setItem('korenty-theme', 'light');
-      } else {
+    function applyTheme(dark) {
+      // Add transitioning class so only the switch gets animated
+      document.documentElement.classList.add('theme-transitioning');
+      if (dark) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('korenty-theme', 'dark');
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('korenty-theme', 'light');
       }
       updateToggleLabel();
+      setTimeout(() => document.documentElement.classList.remove('theme-transitioning'), 350);
+    }
+
+    btn.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      applyTheme(!isDark);
     });
 
     // Wire up mobile menu secondary toggle buttons
