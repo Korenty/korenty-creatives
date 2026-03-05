@@ -450,6 +450,47 @@
   }
 
   /* ─────────────────────────────────────────
+     17. Light / Dark Theme Toggle
+  ───────────────────────────────────────── */
+  function initThemeToggle() {
+    const btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+
+    // Apply saved preference or default to light
+    const saved = localStorage.getItem('korenty-theme');
+    if (saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+
+    function updateToggleLabel() {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      btn.setAttribute('title', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+
+    updateToggleLabel();
+
+    btn.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('korenty-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('korenty-theme', 'dark');
+      }
+      updateToggleLabel();
+    });
+
+    // Wire up mobile menu secondary toggle buttons
+    document.querySelectorAll('.mobile-theme-toggle').forEach(mobileBtn => {
+      mobileBtn.addEventListener('click', () => btn.click());
+    });
+  }
+
+  /* ─────────────────────────────────────────
      Init All
   ───────────────────────────────────────── */
   function init() {
@@ -469,6 +510,7 @@
     initActiveNav();
     initStaggerChildren();
     initRectAnimations();
+    initThemeToggle();
   }
 
   if (document.readyState === 'loading') {
